@@ -12,6 +12,7 @@
 		AC9E58C71FF72867006778D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9E58C51FF72867006778D2 /* Main.storyboard */; };
 		AC9E58C91FF72867006778D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9E58C81FF72867006778D2 /* Assets.xcassets */; };
 		AC9E58CC1FF72867006778D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9E58CA1FF72867006778D2 /* LaunchScreen.storyboard */; };
+		AC9E58D41FF72F79006778D2 /* Sicilian_Breeze.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AC9E58D31FF72A79006778D2 /* Sicilian_Breeze.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		AC9E58C81FF72867006778D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC9E58CB1FF72867006778D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC9E58CD1FF72867006778D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC9E58D31FF72A79006778D2 /* Sicilian_Breeze.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sicilian_Breeze.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		AC9E58C01FF72867006778D2 /* AVAudioPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				AC9E58D31FF72A79006778D2 /* Sicilian_Breeze.mp3 */,
 				AC9E58C11FF72867006778D2 /* AppDelegate.swift */,
 				AC9E58C31FF72867006778D2 /* ViewController.swift */,
 				AC9E58C51FF72867006778D2 /* Main.storyboard */,
@@ -124,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC9E58CC1FF72867006778D2 /* LaunchScreen.storyboard in Resources */,
+				AC9E58D41FF72F79006778D2 /* Sicilian_Breeze.mp3 in Resources */,
 				AC9E58C91FF72867006778D2 /* Assets.xcassets in Resources */,
 				AC9E58C71FF72867006778D2 /* Main.storyboard in Resources */,
 			);
