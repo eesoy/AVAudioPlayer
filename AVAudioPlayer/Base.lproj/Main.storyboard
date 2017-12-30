@@ -43,7 +43,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ahp-yw-GN1">
-                                <rect key="frame" x="51" y="245" width="69" height="51"/>
+                                <rect key="frame" x="51" y="287" width="69" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Play"/>
@@ -52,7 +52,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAo-7B-GmF">
-                                <rect key="frame" x="153" y="245" width="69" height="51"/>
+                                <rect key="frame" x="153" y="287" width="69" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Pause"/>
@@ -61,7 +61,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oyh-c2-zTb">
-                                <rect key="frame" x="253" y="245" width="69" height="51"/>
+                                <rect key="frame" x="252" y="287" width="69" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Stop"/>
@@ -105,8 +105,17 @@
                                     <action selector="recordClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sU8-d3-VCI"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJc-kh-ILX">
+                                <rect key="frame" x="157" y="217" width="60" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="play"/>
+                                <state key="highlighted" image="press"/>
+                                <connections>
+                                    <action selector="playPauseClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Wf-dF-Xy6"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jR-P8-sJd">
-                                <rect key="frame" x="211" y="504" width="46" height="21"/>
+                                <rect key="frame" x="211" y="493" width="65" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -123,6 +132,8 @@
                     <connections>
                         <outlet property="btn_pause" destination="XAo-7B-GmF" id="4V6-sL-DpH"/>
                         <outlet property="btn_play" destination="Ahp-yw-GN1" id="dAu-8a-Vi3"/>
+                        <outlet property="btn_playPause" destination="aJc-kh-ILX" id="5Ix-zo-cNi"/>
+                        <outlet property="btn_record" destination="05l-WP-bAM" id="GtS-Ep-Nyr"/>
                         <outlet property="btn_stop" destination="Oyh-c2-zTb" id="e9k-XZ-1A7"/>
                         <outlet property="lbl_currentTime" destination="qY3-Yr-1Xs" id="xju-sc-9SM"/>
                         <outlet property="lbl_record" destination="7jR-P8-sJd" id="cke-1n-rpE"/>
@@ -136,4 +147,8 @@
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="play" width="128" height="128"/>
+        <image name="press" width="512" height="512"/>
+    </resources>
 </document>
